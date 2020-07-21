@@ -274,7 +274,7 @@ a[href="/user/Swishilicous/"]:not(.avatar):not(.user):not(.link):not(.primary-li
     content: 'Ultra Cutie';
 }
 
-a[href="/user/PantsuGod"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+a[href="/user/PantsuGod/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
     content: 'Boo ♡';
 }
 
