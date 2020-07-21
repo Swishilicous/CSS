@@ -269,7 +269,7 @@ div.header-wrap > div.nav-wrap > div > a:nth-child(8) {
     font-family: 'Comic Sans MS';
 }
 
-/* Custom Name Tag */
+/* Custom Name Tags */
 a[href="/user/Swishilicous/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
     content: 'Ultra Cutie';
 }
