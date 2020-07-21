@@ -1,0 +1,373 @@
+/* BEGIN CUTIFICATION PROCESS */
+* { cursor: url(https://i.fiery.me/46P7R.cur), auto; }
+a:hover { cursor:url(https://i.fiery.me/korZL.cur), pointer !important; }
+
+@font-face {
+    font-family: 'Cookie Monster';
+    src: url(https://i.fiery.me/AvGAl.ttf) format('tff'),
+    url(https://i.fiery.me/AsSG4.woff) format('woff'),
+    url(https://i.fiery.me/xhAAv.woff2) format('woff2');
+}
+
+@font-face {
+    font-family: 'Satisfy';
+    font-weight: 400;
+    src: url(https://i.fiery.me/0JYVw.woff) format('woff'),
+    url(https://i.fiery.me/9dJ6D.woff2) format('woff2');
+}
+
+/* Colors */
+:root,
+.site-theme-dark,
+.site-theme-contrast {
+    --color-background: 24, 11, 34;
+    --color-foreground: 32, 21, 46;
+    --color-foreground-grey: 21, 15, 31;
+    --color-foreground-grey-dark: 13, 6, 19;
+    /* Untouched */
+    --color-foreground-blue: 15,22,31;
+    --color-foreground-blue-dark: 6,12,19;
+    --color-text: 159,173,189;
+    --color-text-light: 114,138,161;
+    --color-text-lighter: 133,150,165;
+    --color-shadow-blue: 0,5,15;
+    --color-background-1200: 251,251,251;
+    --color-background-1100: 240,243,246;
+    --color-background-1000: 221,230,238;
+    --color-background-900: 201,215,227;
+    --color-background-800: 173,192,210;
+    --color-background-700: 139,160,178;
+    --color-background-600: 116,136,153;
+    --color-background-500: 100,115,128;
+    --color-background-400: 81,97,112;
+    --color-background-300: 30,42,56;
+    --color-background-100: 21,31,46;
+    --color-background-200: 11,22,34;
+    --color-gray-1200: 251,251,251;
+    --color-gray-1100: 240,243,246;
+    --color-gray-1000: 221,230,238;
+    --color-gray-900: 201,215,227;
+    --color-gray-800: 173,192,210;
+    --color-gray-700: 139,160,178;
+    --color-gray-600: 116,136,153;
+    --color-gray-500: 100,115,128;
+    --color-gray-400: 81,97,112;
+    --color-gray-300: 30,42,56;
+    --color-gray-100: 21,31,46;
+    --color-gray-200: 11,22,34;
+}
+
+/* Stuff that doesn't want to be Styled */
+.site-theme-dark .nav-unscoped,
+.el-select-dropdown.el-popper { 
+    background-color: rgb(var(--color-foreground));
+}
+
+/* Fonts */
+.name[data-v-5445dac8],
+.stats-wrap[data-v-2cf72664] {
+    font-family: 'Cookie Monster';
+}
+
+h3.section-name,
+.link[data-v-4fbac4e1],
+.value[data-v-815ccddc],
+.label[data-v-815ccddc],
+.milestone[data-v-815ccddc] {
+    font-family: 'Satisfy';
+}
+
+.nav.container[data-v-5445dac8] {
+    font-family: 'Satisfy';
+    font-size: 1.5rem;
+}
+
+.group-header[data-v-310d8b7e],
+.group-header[data-v-1e00b9da] {
+    font-family: 'Satisfy';
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.section-header[data-v-45543a61],
+.section-header[data-v-93c5960c],
+.section-header[data-v-514856af]::before,
+.section-header[data-v-09492909]::before {
+    font-family: 'Satisfy';
+    font-weight: 400;
+    font-size: 1.8rem;
+}
+
+.title,
+.score,
+.format,
+.progress,
+[data-v-310d8b7e],
+[data-v-1e00b9da],
+div.filter-group > span.active,
+.router-link-exact-active .router-link-active {
+    font-family: 'Overpass';
+    font-size: 1.35rem;
+}
+
+div.actions > div.nav-btn > [data-v-5445dac8] {
+    font-family: 'Comic Sans MS';
+    font-weight: 600;
+}
+
+.status,
+.button,
+.nav-btn,
+.markdown,
+.list-wrap,
+.milestone,
+.markdown a,
+.section-name,
+.group-header,
+.filter-group,
+.list-head.row,
+.hohExtraFilters,
+.el-input__inner,
+.el-textarea__inner,
+.name[data-v-5e514b1e],
+.name[data-v-5a191921],
+.title[data-v-5e514b1e] a,
+.stats-wrap[data-v-2cf72664],
+.content-wrap[data-v-2cf72664],
+div.filter-group > span.active[data-v-310d8b7e] {
+    font-family: 'Overpass';
+    font-weight: 600;
+}
+
+/* Remove Stuff */
+::-webkit-scrollbar,
+.footer[data-v-82d0a8cc],
+.desktop[data-v-aedb6876],
+.about[data-v-2cf72664] .markdown h4 a,
+div.header-wrap > div.nav-wrap > div > a:nth-child(7),
+div.header-wrap > div.nav-wrap > div > a:nth-child(8) {
+    display: none;
+}
+
+/* Hey, ::after is pretty cool wouldn't you say :3 */
+
+/* Following Button */
+.nav-btn[data-v-5445dac8] > span:nth-child(1)::after {
+    visibility: visible;
+    content: ' :)';
+    background: transparent;
+    font-family: 'Comic Sans MS';
+}
+
+.nav-btn[data-v-5445dac8] > span:nth-child(2)::after {
+    visibility: visible;
+    content: ' :(';
+}
+
+/* Follower Tag */
+.mod-badge.follower-badge { visibility: hidden; }
+.mod-badge.follower-badge::before {
+    visibility: visible;
+    left: 6px;
+    content: 'You\'re Cute :)';
+    position: relative;
+    padding: 5px 8px;
+    border-radius: 4px;
+    background: rgba(var(--color-blue),.8);
+    color: rgb(var(--color-white));
+    font-family: 'Comic Sans MS';
+}
+
+/* Fix Stupid Padding */
+.name[data-v-5445dac8] {
+    padding: 22px 0px;
+}
+
+/* Bio */
+.about .content-wrap[data-v-2cf72664] { max-height: 1000px; }
+.markdown[data-v-2cf72664]::after {
+    content: '';
+    font-style: italic;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    animation: BioFooter infinite 30s;
+}
+
+@keyframes BioFooter {
+    0% { content: 'Powered by Cuteness'; }
+    20% { content: 'Powered by Automail'; }
+    40% { content: 'Powered by AniList'; }
+    60% { content: 'Powered by The Internet'; }
+    80% { content: 'Powered by CSS Magic'; }
+    100% { content: 'You\'re cute :3'; }
+}
+
+/* Hover */
+.reply,
+.button,
+.reply.preview,
+.input.el-textarea,
+.wrap[data-v-5e514b1e],
+.content-wrap[data-v-2cf72664],
+.nav.container[data-v-5445dac8],
+.markdown-editor[data-v-93c5960c],
+.favourite.media[data-v-4dea9e03],
+.activity-history.content-wrap[data-v-514856af] {
+    transform: scale(1);
+    transition: 0.3s;
+}
+
+.button:hover,
+.nav.container[data-v-5445dac8]:hover {
+    transform: scale(1.04);
+}
+
+.reply:hover,
+.reply.preview:hover,
+.input.el-textarea:hover,
+.wrap[data-v-5e514b1e]:hover,
+.content-wrap[data-v-2cf72664]:hover,
+.markdown-editor[data-v-93c5960c]:hover,
+.activity-history.content-wrap[data-v-514856af]:hover {
+    transform: scale(1.02);
+}
+
+.favourite.media[data-v-4dea9e03]:hover {
+    transform: scale(1.06);
+}
+
+/* Favorites */
+.overview .favourites > .favourites-wrap {
+    overflow: visible;
+    width: auto;
+}
+
+/* Roundifier */
+.history-day[data-v-514856af] {
+    border-radius: 50%;
+}
+
+/* Activity Posts */
+.name[data-v-5a191921]::after,
+.name[data-v-5e514b1e]::after {
+    content: 'Cutie';
+    position: relative;
+    top: -1px;
+    left: 4px;
+    padding: 5px 8px;
+    border-radius: 4px;
+    font-size: 1.2rem;
+    background: rgb(var(--color-background));
+    color: rgb(var(--color-text));
+    font-family: 'Comic Sans MS';
+}
+
+.donator-badge[data-v-5e514b1e] {
+    padding: 7px 8px;
+    margin-bottom: 3px;
+    font-family: 'Comic Sans MS';
+}
+
+/* Custom Name Tag */
+a[href="/user/Swishilicous/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+    content: 'Ultra Cutie';
+}
+
+a[href="/user/PantsuGod"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+    content: 'Boo ♡';
+}
+
+/* Heart Animation */
+.button[data-v-b23584ce]:hover {
+    animation: boop 1s infinite ease-out;
+}
+
+@keyframes boop {
+    0%, 60% { transform: scale(1); } 
+    20%, 40% { transform: scale(1.2); }
+}
+
+/* Activity Feed */
+.section-header[data-v-09492909] { visibility: hidden; }
+.section-header[data-v-09492909]::before {
+    visibility: visible;
+    content: 'Cute Feed';
+}
+
+/* Activity History */
+.section-header[data-v-514856af] { visibility: hidden; }
+.section-header[data-v-514856af]::before { 
+    visibility: visible; 
+    content: 'Cute Calender';
+}
+
+/* EXECUTE UWU PROCESS */
+.activity-history:not(:hover) > .history-day {
+    background: rgb(var(--color-foreground-grey-dark));
+    pointer-events: none;
+}
+
+.activity-history:not(:hover) > .history-day:nth-child(n+37):not(:nth-child(n+42)),
+.activity-history:not(:hover) > .history-day:nth-child(48),
+.activity-history:not(:hover) > .history-day:nth-child(55),
+.activity-history:not(:hover) > .history-day:nth-child(62), 
+.activity-history:not(:hover) > .history-day:nth-child(n+65):not(:nth-child(n+70)),
+.activity-history:not(:hover) > .history-day:nth-child(n+79):not(:nth-child(n+84)),
+.activity-history:not(:hover) > .history-day:nth-child(90),
+.activity-history:not(:hover) > .history-day:nth-child(97),
+.activity-history:not(:hover) > .history-day:nth-child(n+102):not(:nth-child(n+105)),
+.activity-history:not(:hover) > .history-day:nth-child(111),
+.activity-history:not(:hover) > .history-day:nth-child(118),
+.activity-history:not(:hover) > .history-day:nth-child(n+121):not(:nth-child(n+126)),
+.activity-history:not(:hover) > .history-day:nth-child(n+135):not(:nth-child(n+140)),
+.activity-history:not(:hover) > .history-day:nth-child(146),
+.activity-history:not(:hover) > .history-day:nth-child(153),
+.activity-history:not(:hover) > .history-day:nth-child(160),
+.activity-history:not(:hover) > .history-day:nth-child(n+163):not(:nth-child(n+168)) {
+    background-color: #b57fa5;
+}
+
+/* Make Activity History Even */
+.activity-history:not(:hover) > .history-day:nth-child(-n+21),
+.activity-history:not(:hover) > .history-day:nth-child(n+183) { 
+    display: none; 
+}
+
+/* Smooth Hover Transition */
+.activity-history > .history-day { transition: 0.6s; }
+
+/* Effects */
+.tooltip.animate-position,
+.medialist .notes:hover::before {
+    backdrop-filter: blur(3px);
+}
+
+.title[data-v-9401173e],
+.content[data-v-9401173e] {
+    background: 0;
+}
+
+/* Navbar */
+#nav.nav {
+    height: 40px;
+}
+
+/* AniList Logo */
+.logo[data-v-4fbac4e1] {
+    content: url(https://i.fiery.me/SEPMK.png);
+    width: 55px;
+    transform: scale(0.6);
+    transition: 0.3s;
+}
+
+.logo[data-v-4fbac4e1]:hover {
+    transform: scale(0.7);
+}
+
+/* Unthemed Thingys */
+.hamburger[data-v-8aeb5e9a],
+.el-dropdown-menu.el-popper,
+.menu.visible[data-v-8aeb5e9a] {
+    background-color: rgb(var(--color-foreground));
+}
