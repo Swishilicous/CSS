@@ -610,6 +610,18 @@ a[href="/user/PantsuGod/"]:not(.avatar):not(.user):not(.link):not(.primary-link)
     left: 0;
 }
 
+/* navbar under banner */
+.nav-wrap[data-v-5445dac8] {
+    background: transparent;
+}
+
+/* navbar under banner */
+.nav-wrap .nav[data-v-5445dac8] {
+    background: rgba(var(--color-foreground),.45);
+    border-radius: 10px;
+    max-width: 1320px;
+}
+
 /* Main container */
 .content.container {
     background: rgb(var(--color-secondarybg));
