@@ -623,12 +623,8 @@ a[href="/user/PantsuGod/"]:not(.avatar):not(.user):not(.link):not(.primary-link)
 }
 
 /* Main container */
-.content.container {
-    background: rgb(var(--color-secondarybg));
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 20px;
-    margin-top: 30px;
+.container {
+    max-width: 1580px;
 }
 
 /* cool tooltip animations */
