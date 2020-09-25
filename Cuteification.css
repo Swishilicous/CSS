@@ -281,6 +281,10 @@ a[href="/user/PantsuGod/"]:not(.avatar):not(.user):not(.link):not(.primary-link)
     content: 'Boo ♡';
 }
 
+a[href="/user/soaphyie/"]: {
+    content: 'jrunek!!';
+}
+
 /* Heart Animation */
 .button[data-v-b23584ce]:hover {
     animation: boop 1s infinite ease-out;
