@@ -2,21 +2,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* BEGIN CUTIFICATION PROCESS */
-* { cursor: url(https://i.fiery.me/46P7R.cur), auto; }
-a:hover { cursor:url(https://i.fiery.me/korZL.cur), pointer !important; }
+
+/* No idea what these were because fiery shut down */
+/* * { cursor: url(https://i.fiery.me/46P7R.cur), auto; }
+a:hover { cursor:url(https://i.fiery.me/korZL.cur), pointer !important; } */
 
 @font-face {
     font-family: 'Cookie Monster';
-    src: url(https://i.fiery.me/AvGAl.ttf) format('tff'),
-    url(https://i.fiery.me/AsSG4.woff) format('woff'),
-    url(https://i.fiery.me/xhAAv.woff2) format('woff2');
+    src: url(https://swishilicous.github.io/CSS/cookiemonster.woff2) format('woff2');
 }
 
 @font-face {
     font-family: 'Satisfy';
     font-weight: 400;
-    src: url(https://i.fiery.me/0JYVw.woff) format('woff'),
-    url(https://i.fiery.me/9dJ6D.woff2) format('woff2');
+    src: url(hhttps://swishilicous.github.io/CSS/satisfaction.woff2) format('woff2');
 }
 
 /* Colors */
