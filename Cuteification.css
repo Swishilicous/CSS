@@ -15,7 +15,7 @@ a:hover { cursor:url(https://i.fiery.me/korZL.cur), pointer !important; } */
 @font-face {
     font-family: 'Satisfy';
     font-weight: 400;
-    src: url(hhttps://swishilicous.github.io/CSS/satisfaction.woff2) format('woff2');
+    src: url(https://swishilicous.github.io/CSS/satisfy.woff2) format('woff2');
 }
 
 /* Colors */
@@ -27,59 +27,60 @@ a:hover { cursor:url(https://i.fiery.me/korZL.cur), pointer !important; } */
     --color-foreground-grey: 21, 15, 31;
     --color-foreground-grey-dark: 13, 6, 19;
     /* Untouched */
-    --color-foreground-blue: 15,22,31;
-    --color-foreground-blue-dark: 6,12,19;
-    --color-text: 159,173,189;
-    --color-text-light: 114,138,161;
-    --color-text-lighter: 133,150,165;
-    --color-shadow-blue: 0,5,15;
-    --color-background-1200: 251,251,251;
-    --color-background-1100: 240,243,246;
-    --color-background-1000: 221,230,238;
-    --color-background-900: 201,215,227;
-    --color-background-800: 173,192,210;
-    --color-background-700: 139,160,178;
-    --color-background-600: 116,136,153;
-    --color-background-500: 100,115,128;
-    --color-background-400: 81,97,112;
-    --color-background-300: 30,42,56;
-    --color-background-100: 21,31,46;
-    --color-background-200: 11,22,34;
-    --color-gray-1200: 251,251,251;
-    --color-gray-1100: 240,243,246;
-    --color-gray-1000: 221,230,238;
-    --color-gray-900: 201,215,227;
-    --color-gray-800: 173,192,210;
-    --color-gray-700: 139,160,178;
-    --color-gray-600: 116,136,153;
-    --color-gray-500: 100,115,128;
-    --color-gray-400: 81,97,112;
-    --color-gray-300: 30,42,56;
-    --color-gray-100: 21,31,46;
-    --color-gray-200: 11,22,34;
+    --color-foreground-blue: 15, 22, 31;
+    --color-foreground-blue-dark: 6, 12, 19;
+    --color-text: 159, 173, 189;
+    --color-text-light: 114, 138, 161;
+    --color-text-lighter: 133, 150, 165;
+    --color-shadow-blue: 0, 5, 15;
+    --color-background-1200: 251, 251, 251;
+    --color-background-1100: 240, 243, 246;
+    --color-background-1000: 221, 230, 238;
+    --color-background-900: 201, 215, 227;
+    --color-background-800: 173, 192, 210;
+    --color-background-700: 139, 160, 178;
+    --color-background-600: 116, 136, 153;
+    --color-background-500: 100, 115, 128;
+    --color-background-400: 81, 97, 112;
+    --color-background-300: 30, 42, 56;
+    --color-background-100: 21, 31, 46;
+    --color-background-200: 11, 22, 34;
+    --color-gray-1200: 251, 251, 251;
+    --color-gray-1100: 240, 243, 246;
+    --color-gray-1000: 221, 230, 238;
+    --color-gray-900: 201, 215, 227;
+    --color-gray-800: 173, 192, 210;
+    --color-gray-700: 139, 160, 178;
+    --color-gray-600: 116, 136, 153;
+    --color-gray-500: 100, 115, 128;
+    --color-gray-400: 81, 97, 112;
+    --color-gray-300: 30, 42, 56;
+    --color-gray-100: 21, 31, 46;
+    --color-gray-200: 11, 22, 34;
 }
 
 /* Stuff that doesn't want to be Styled */
 .site-theme-dark .nav-unscoped,
-.el-select-dropdown.el-popper { 
+.el-select-dropdown.el-popper {
     background-color: rgb(var(--color-foreground));
 }
 
 /* Fonts */
-.name[data-v-5445dac8],
-.stats-wrap[data-v-2cf72664] {
+.genre .name {
     font-family: 'Cookie Monster';
 }
 
 h3.section-name,
-.link[data-v-4fbac4e1],
+/* Very top bar links */
+.link[data-v-62eacfff],
+/* Milestone shit */
+.milestone,
 .value[data-v-815ccddc],
-.label[data-v-815ccddc],
-.milestone[data-v-815ccddc] {
+.label[data-v-815ccddc] {
     font-family: 'Satisfy';
 }
 
-.nav.container[data-v-5445dac8] {
+.nav.container {
     font-family: 'Satisfy';
     font-size: 1.5rem;
 }
@@ -91,10 +92,8 @@ h3.section-name,
     font-size: 1.5rem;
 }
 
-.section-header[data-v-45543a61],
-.section-header[data-v-93c5960c],
-.section-header[data-v-514856af]::before,
-.section-header[data-v-09492909]::before {
+.section-header,
+.section-header::before {
     font-family: 'Satisfy';
     font-weight: 400;
     font-size: 1.8rem;
@@ -110,11 +109,6 @@ div.filter-group > span.active,
 .router-link-exact-active .router-link-active {
     font-family: 'Overpass';
     font-size: 1.35rem;
-}
-
-div.actions > div.nav-btn > [data-v-5445dac8] {
-    font-family: 'Comic Sans MS';
-    font-weight: 600;
 }
 
 .status,
@@ -154,40 +148,45 @@ div.header-wrap > div.nav-wrap > div > a:nth-child(8) {
 /* Hey, ::after is pretty cool wouldn't you say :3 */
 
 /* Following Button */
-.nav-btn[data-v-5445dac8] > span:nth-child(1)::after {
-    visibility: visible;
-    content: ' :)';
-    background: transparent;
+div.actions > div.nav-btn {
     font-family: 'Comic Sans MS';
+    font-weight: 600;
 }
 
-.nav-btn[data-v-5445dac8] > span:nth-child(2)::after {
+div.actions > div.nav-btn > span:nth-child(1)::after {
+    background: transparent;
+    visibility: visible;
+    content: ' :)';
+}
+
+div.actions > div.nav-btn > span:nth-child(2)::after {
     visibility: visible;
     content: ' :(';
 }
 
 /* Follower Tag */
-.mod-badge.follower-badge { visibility: hidden; }
-.mod-badge.follower-badge::before {
+.follower-badge {
+    visibility: hidden;
+}
+
+.follower-badge::before {
     visibility: visible;
     left: 6px;
     content: 'You\'re Cute :)';
     position: relative;
     padding: 5px 8px;
     border-radius: 0px 0px 4px 4px;
-    background: rgba(var(--color-blue),.8);
+    background: rgba(var(--color-blue), .8);
     color: rgb(var(--color-white));
     font-family: 'Comic Sans MS';
 }
 
-/* Fix Stupid Padding */
-.name[data-v-5445dac8] {
-    padding: 22px 0px;
+/* Bio */
+.about .content-wrap {
+    max-height: 1000px;
 }
 
-/* Bio */
-.about .content-wrap[data-v-2cf72664] { max-height: 1000px; }
-.markdown[data-v-2cf72664]::after {
+.about .content-wrap .markdown::after {
     content: '';
     font-style: italic;
     position: relative;
@@ -197,12 +196,29 @@ div.header-wrap > div.nav-wrap > div > a:nth-child(8) {
 }
 
 @keyframes BioFooter {
-    0% { content: 'Powered by Cuteness'; }
-    20% { content: 'Powered by Automail'; }
-    40% { content: 'Powered by AniList'; }
-    60% { content: 'Powered by The Internet'; }
-    80% { content: 'Powered by CSS Magic'; }
-    100% { content: 'You\'re cute :3'; }
+    0% {
+        content: 'Powered by Cuteness';
+    }
+
+    20% {
+        content: 'Powered by Automail';
+    }
+
+    40% {
+        content: 'Powered by AniList';
+    }
+
+    60% {
+        content: 'Powered by The Internet';
+    }
+
+    80% {
+        content: 'Powered by CSS Magic';
+    }
+
+    100% {
+        content: 'You\'re cute :3';
+    }
 }
 
 /* Hover */
@@ -210,44 +226,42 @@ div.header-wrap > div.nav-wrap > div > a:nth-child(8) {
 .button,
 .reply.preview,
 .input.el-textarea,
-.wrap[data-v-5e514b1e],
-.content-wrap[data-v-2cf72664],
-.nav.container[data-v-5445dac8],
-.markdown-editor[data-v-93c5960c],
-.favourite.media[data-v-4dea9e03],
-.activity-history.content-wrap[data-v-514856af] {
+.wrap[data-v-b584a8de],
+.content-wrap,
+.nav.container,
+.markdown-editor,
+.favourite.media {
     transform: scale(1);
     transition: 0.3s;
 }
 
 .button:hover,
-.nav.container[data-v-5445dac8]:hover {
+.nav.container:hover {
     transform: scale(1.04);
 }
 
 .reply:hover,
 .reply.preview:hover,
 .input.el-textarea:hover,
-.wrap[data-v-5e514b1e]:hover,
-.content-wrap[data-v-2cf72664]:hover,
-.markdown-editor[data-v-93c5960c]:hover,
-.activity-history.content-wrap[data-v-514856af]:hover {
+.wrap[data-v-b584a8de]:hover,
+.content-wrap:hover,
+.markdown-editor:hover {
     transform: scale(1.02);
 }
 
-.favourite.media[data-v-4dea9e03]:hover {
+.favourite.media:hover {
     transform: scale(1.06);
 }
 
-/* Favorites */
-.overview .favourites > .favourites-wrap {
+/* makes favorites forced to be 4 wide (broken) */
+.overview .favourites .favourites-wrap {
     overflow: visible;
     width: auto;
 }
 
 /* Roundifier */
-.history-day[data-v-514856af] {
-    border-radius: 50%;
+.history-day {
+    border-radius: 50% !important;
 }
 
 /* Activity Posts */
@@ -265,46 +279,61 @@ div.header-wrap > div.nav-wrap > div > a:nth-child(8) {
     font-family: 'Comic Sans MS';
 }
 
-.donator-badge[data-v-5e514b1e] {
+.donator-badge {
     padding: 7px 8px;
     margin-bottom: 3px;
     font-family: 'Comic Sans MS';
 }
 
 /* Custom Name Tags */
-a[href="/user/Swishilicous/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
+a[href="/user/Swishilicous/"]:not(.avatar):not(.user):not(.link):not(.primary-link):not(.router-link-exact-active)::after {
     content: 'Ultra Cutie';
-}
-
-a[href="/user/PantsuGod/"]:not(.avatar):not(.user):not(.link):not(.primary-link)::after {
-    content: 'Boo ♡';
-}
-
-a[href="/user/soaphyie/"]: {
-    content: 'jrunek!!';
+    background: rgb(var(--color-background));
+    border-radius: 3px;
+    color: rgb(var(--color-text));
+    font-size: 1.2rem;
+    line-height: 1.15;
+    letter-spacing: .03em;
+    margin-left: 9px;
+    overflow: hidden;
+    padding: 4px 7px;
 }
 
 /* Heart Animation */
-.button[data-v-b23584ce]:hover {
+.like-wrap .button:hover {
     animation: boop 1s infinite ease-out;
 }
 
 @keyframes boop {
-    0%, 60% { transform: scale(1); } 
-    20%, 40% { transform: scale(1.2); }
+
+    0%,
+    60% {
+        transform: scale(1);
+    }
+
+    20%,
+    40% {
+        transform: scale(1.2);
+    }
 }
 
 /* Activity Feed */
-.section-header[data-v-09492909] { visibility: hidden; }
-.section-header[data-v-09492909]::before {
+.section-header[data-v-eb51fd0e] {
+    visibility: hidden;
+}
+
+.section-header[data-v-eb51fd0e]::before {
     visibility: visible;
     content: 'Cute Feed';
 }
 
 /* Activity History */
-.section-header[data-v-514856af] { visibility: hidden; }
-.section-header[data-v-514856af]::before { 
-    visibility: visible; 
+.section-header[data-v-b79eb0f0] {
+    visibility: hidden;
+}
+
+.section-header[data-v-b79eb0f0]::before {
+    visibility: visible;
     content: 'Cute Calender';
 }
 
@@ -317,7 +346,7 @@ a[href="/user/soaphyie/"]: {
 .activity-history:not(:hover) > .history-day:nth-child(n+37):not(:nth-child(n+42)),
 .activity-history:not(:hover) > .history-day:nth-child(48),
 .activity-history:not(:hover) > .history-day:nth-child(55),
-.activity-history:not(:hover) > .history-day:nth-child(62), 
+.activity-history:not(:hover) > .history-day:nth-child(62),
 .activity-history:not(:hover) > .history-day:nth-child(n+65):not(:nth-child(n+70)),
 .activity-history:not(:hover) > .history-day:nth-child(n+79):not(:nth-child(n+84)),
 .activity-history:not(:hover) > .history-day:nth-child(90),
@@ -336,12 +365,14 @@ a[href="/user/soaphyie/"]: {
 
 /* Make Activity History Even */
 .activity-history:not(:hover) > .history-day:nth-child(-n+21),
-.activity-history:not(:hover) > .history-day:nth-child(n+183) { 
-    display: none; 
+.activity-history:not(:hover) > .history-day:nth-child(n+183) {
+    display: none;
 }
 
 /* Smooth Hover Transition */
-.activity-history > .history-day { transition: 0.6s; }
+.activity-history .history-day {
+    transition: 0.6s;
+}
 
 /* Effects */
 .tooltip.animate-position,
@@ -360,110 +391,108 @@ a[href="/user/soaphyie/"]: {
 }
 
 /* AniList Logo */
-.logo[data-v-4fbac4e1] {
+/* Was a 🌺 but cba to restore it */
+/* .logo[data-v-4fbac4e1] {
     content: url(https://i.fiery.me/SEPMK.png);
     width: 55px;
     transform: scale(0.6);
     transition: 0.3s;
-}
+} */
 
-.logo[data-v-4fbac4e1]:hover {
+/* .logo[data-v-4fbac4e1]:hover {
     transform: scale(0.7);
-}
+} */
 
 /* Unthemed Thingys */
-.hamburger[data-v-8aeb5e9a],
+.hamburger,
+.menu.visible,
 .el-dropdown-menu.el-popper,
-.menu.visible[data-v-8aeb5e9a] {
+.nav-unscoped.transparent:hover {
     background-color: rgb(var(--color-foreground));
 }
 
-/* Kex Themed Code - Credits To https://anilist.co/user/Kex1016 */ 
-.follower-badge[data-v-5445dac8] { left: 15px; }
-.name[data-v-5445dac8] {
-	position: initial;
-	font-family: 'Roboto Condensed', serif;
-	font-size: 80px;
-    padding-left: 12px;
+/* Kex Themed Code - Credits To https://anilist.co/user/Kex1016 */
+.follower-badge {
+    left: 15px;
 }
 
-.nav-btn[data-v-5445dac8] {
-	position: absolute;
-	top: 25px;
-	left: calc(50% - 150px);
+.nav-btn[data-v-1cc2919e] {
+    position: absolute;
+    top: 25px;
+    left: calc(50% - 150px);
 }
 
-.banner-content[data-v-5445dac8] {
+.banner-content[data-v-1cc2919e] {
     flex-direction: column;
-	align-items: center;
-	align-content: center;
+    align-items: center;
+    align-content: center;
 }
 
-.banner .shadow[data-v-5445dac8] {
-	background: linear-gradient(180deg, rgba(var(--color-shadow-dark), 0) 40%, rgba(var(--color-shadow-dark), 1));
+.banner .shadow[data-v-1cc2919e] {
+    background: linear-gradient(180deg, rgba(var(--color-shadow-dark), 0) 40%, rgba(var(--color-shadow-dark), 1));
 }
 
-.avatar[data-v-5445dac8] {
-	position: relative;
-	top: -5px;
+.avatar[data-v-1cc2919e] {
+    position: relative;
+    top: -5px;
     left: -5px;
-	border-radius: 100% !important;
-	/* box-shadow: 0 0 0 8px rgba(var(--color-blue), .5); */
-	z-index: 1000;
-	filter: drop-shadow(0px 0px 8px rgba(var(--color-blue), .5));
+    border-radius: 100% !important;
+    /* box-shadow: 0 0 0 8px rgba(var(--color-blue), .5); */
+    z-index: 1000;
+    filter: drop-shadow(0px 0px 8px rgba(var(--color-blue), .5));
 }
 
 
 /* Follow button */
-.nav-btn[data-v-5445dac8] {
-	background: none;
-	border: 1px solid rgb(var(--color-blue));
-	border-radius: 4px;
-	transition: .2s;
-	overflow: hidden !important;
+.nav-btn[data-v-1cc2919e] {
+    background: none;
+    border: 1px solid rgb(var(--color-blue));
+    border-radius: 4px;
+    transition: .2s;
+    overflow: hidden !important;
 }
 
-.nav-btn[data-v-5445dac8]:focus {
-	outline: none;
+.nav-btn[data-v-1cc2919e]:focus {
+    outline: none;
 }
 
-.nav-btn[data-v-5445dac8]:before {
-	content: '';
-	display: block;
-	position: absolute;
-	background: rgba(255,255,255,.5);
-	width: 60px;
-	height: 100%;
-	left: 0;
-	top: 0;
-	opacity: .5;
-	filter: blur(30px);
-	transform: translateX(-130px) skewX(-15deg);
+.nav-btn[data-v-1cc2919e]:before {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .5);
+    width: 60px;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: .5;
+    filter: blur(30px);
+    transform: translateX(-130px) skewX(-15deg);
 }
 
-.nav-btn[data-v-5445dac8]:after {
-	content: '';
-	display: block;
-	position: absolute;
-	background: rgba(255,255,255,.2);
-	width: 30px;
-	height: 100%;
-	left: 30px;
-	top: 0;
-	opacity: 0;
-	filter: blur(30px);
+.nav-btn[data-v-1cc2919e]:after {
+    content: '';
+    display: block;
+    position: absolute;
+    background: rgba(255, 255, 255, .2);
+    width: 30px;
+    height: 100%;
+    left: 30px;
+    top: 0;
+    opacity: 0;
+    filter: blur(30px);
 }
 
-.nav-btn[data-v-5445dac8]:hover {
-	background: rgba(var(--color-blue), .5);
+.nav-btn[data-v-1cc2919e]:hover {
+    background: rgba(var(--color-blue), .5);
 }
 
-.banner .container[data-v-5445dac8] {
+.banner .container[data-v-1cc2919e] {
     max-width: 100%;
     padding: 0;
 }
 
-.banner-content[data-v-5445dac8] {
+.banner-content[data-v-1cc2919e] {
     height: 100%;
     width: 100%;
     align-items: center;
@@ -472,19 +501,19 @@ a[href="/user/soaphyie/"]: {
 }
 
 /* banner with card-like look */
-.banner[data-v-5445dac8] {
+.banner[data-v-1cc2919e] {
     margin-bottom: 30px;
     overflow: hidden;
 }
 
-.header-wrap[data-v-5445dac8] {
+.header-wrap[data-v-1cc2919e] {
     margin-left: 30px;
     margin-right: 30px;
     padding-top: 100px;
 }
 
 /* banner shadow to look epic */
-.banner .shadow[data-v-5445dac8] {
+.banner .shadow[data-v-1cc2919e] {
     background: linear-gradient(270deg, rgba(var(--color-shadow-dark), 0) 40%, rgba(var(--color-shadow-dark), 1));
     height: 100%;
     width: 100%;
@@ -497,16 +526,16 @@ a[href="/user/soaphyie/"]: {
 }
 
 /* username style/placement */
-.name[data-v-5445dac8] {
-    position: absolute;
+.name[data-v-1cc2919e] {
+    position: sticky;
+    font-family: 'Roboto Condensed', serif;
     top: calc(50% - 10px);
     font-size: 100px;
     z-index: 20;
 }
 
 /* avatar placement */
-.avatar[data-v-5445dac8] {
-    margin-left: 20px;
+.avatar[data-v-1cc2919e] {
     clip-path: circle(50% at 50% 40%);
     z-index: 20 !important;
     margin-top: 30px;
@@ -514,7 +543,7 @@ a[href="/user/soaphyie/"]: {
 }
 
 /* follower badge redesign */
-.follower-badge[data-v-5445dac8] {
+.follower-badge {
     position: absolute;
     top: 0;
     z-index: 20;
@@ -522,7 +551,7 @@ a[href="/user/soaphyie/"]: {
 }
 
 /* actions placed in the right spot */
-.actions[data-v-5445dac8] {
+.actions[data-v-1cc2919e] {
     position: absolute;
     top: calc(100% - 70px);
     margin-right: auto !important;
@@ -533,7 +562,7 @@ a[href="/user/soaphyie/"]: {
 }
 
 /* dropdown reposition/resize */
-.dropdown[data-v-5445dac8] {
+.dropdown[data-v-1cc2919e] {
     position: absolute;
     top: 20px;
     left: calc(100% - 65px);
@@ -546,7 +575,7 @@ a[href="/user/soaphyie/"]: {
 }
 
 /* fixed nav-btn size */
-.nav-btn[data-v-5445dac8] {
+.nav-btn[data-v-1cc2919e] {
     width: 300px;
 }
 
@@ -581,12 +610,12 @@ a[href="/user/soaphyie/"]: {
 }
 
 /* underline effects */
-.nav .link[data-v-5445dac8] {
+.nav .link[data-v-1cc2919e] {
     position: relative;
 }
 
 /* - link underline */
-.nav .link[data-v-5445dac8]::after {
+.nav .link[data-v-1cc2919e]::after {
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -600,27 +629,27 @@ a[href="/user/soaphyie/"]: {
 }
 
 /* - active link underline */
-.nav .router-link-active[data-v-5445dac8]::after {
+.nav .router-link-active[data-v-1cc2919e]::after {
     width: 100%;
     left: 0;
     background: rgb(var(--color-blue-dim));
 }
 
 /* - link hover underline */
-.nav .link[data-v-5445dac8]:hover::after {
+.nav .link[data-v-1cc2919e]:hover::after {
     width: 100%;
     background: rgb(var(--color-blue));
     left: 0;
 }
 
 /* navbar under banner */
-.nav-wrap[data-v-5445dac8] {
+.nav-wrap[data-v-1cc2919e] {
     background: transparent;
 }
 
 /* navbar under banner */
-.nav-wrap .nav[data-v-5445dac8] {
-    background: rgba(var(--color-foreground),.45);
+.nav-wrap .nav[data-v-1cc2919e] {
+    background: rgba(var(--color-foreground), .45);
     border-radius: 10px;
     max-width: 1320px;
 }
@@ -631,10 +660,10 @@ a[href="/user/soaphyie/"]: {
 }
 
 /* cool tooltip animations */
-.tooltip.animate-position[data-v-9401173e] {
+.tooltip.animate-position {
     transition: opacity .2s cubic-bezier(0.075, 0.820, 0.165, 1.000), transform .2s cubic-bezier(0.075, 0.820, 0.165, 1.000);
 }
 
 .banner-content h1.name {
-	filter: none;
+    filter: none;
 }
